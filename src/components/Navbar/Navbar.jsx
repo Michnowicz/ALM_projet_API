@@ -8,12 +8,12 @@ export default function Navbar() {
     return(
         <nav>
             <div className="logo">
-                <Link>LOGO</Link>
+                <Link to="/" className="myAnime">MyAnime</Link>
             </div>
 
             <div className="linkDiv">
-                <Link>TOP ANIME</Link>
-                <Link>TOP MANGA</Link>
+                <Link to="/">TOP ANIME</Link>
+                <Link to='/manga'>TOP MANGA</Link>
                 <Link>CHARACTERS</Link>
             </div>
         </nav>

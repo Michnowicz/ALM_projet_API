@@ -1,0 +1,84 @@
+
+.TopManga {
+    background-color: #f6f6f6;
+}
+
+.Searchbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-top: 10px;
+    padding-bottom: 30px;
+    position: relative;
+}
+.search i {
+    position: absolute;
+    top: 18px;
+    left: 16px;
+    color: grey;
+}
+.search input {
+    width: 300px;
+    padding: 8px 10px 8px 40px;
+    border: 1px solid grey ;
+    background-color: rgba(255, 255, 255, 0);
+    border-radius: 20px;
+}
+.filter select {
+    border-radius: 4px;
+    border: 1px solid grey;
+    background-color: rgba(255, 255, 255, 0);
+    padding: 6px;
+    width: 200px;
+}
+
+.TopAnimeCards {
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+    justify-content: space-between;
+    gap: 40px;
+}
+
+.card {
+    width: 45%;
+    padding: 10px;
+    box-sizing: border-box;
+    background-color: white;
+    display: flex;
+    gap: 30px;
+}
+.card .imageDiv img {
+    margin-left: 10px;
+    height: 250px;
+    width: 150px;
+}
+.card .textDiv {
+    margin-top: 30px;
+    color: #191035;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 100%;
+}
+.cardText h3 {
+    font-size: 1.2rem;
+}
+.cardText p {
+    font-size: 1rem;
+}
+.btnInfo {
+    width: 100%;
+    display: flex;
+    justify-content: flex-end;
+}
+
+
+.btnPillRose {
+    color: #e376e6;
+    border: 2px solid #e376e6;
+    background-color: rgba(255, 255, 255, 0);
+    padding: 10px 50px 10px 50px;
+    border-radius: 20px;
+    cursor: pointer;
+}

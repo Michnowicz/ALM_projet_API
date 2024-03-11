@@ -15,9 +15,14 @@ nav a {
     font-size: 1rem;
 }
 
+nav .myAnime {
+    font-size: 2rem;
+}
+
 .linkDiv {
     padding: 20px;
     display: flex;
+    align-items: center;
     gap: 40px;
     margin-right: 40px;
 }

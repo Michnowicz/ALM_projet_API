@@ -3,6 +3,7 @@ import './App.css'
 import { RouterProvider, createBrowserRouter  } from 'react-router-dom';
 import TopAnime from './components/TopAnime/TopAnime.jsx';
 import DetailAnime from './components/DetailAnime/DetailAnime.jsx';
+import TopManga from './components/TopManga/TopManga.jsx';
 
 function App() {
 
@@ -15,6 +16,11 @@ function App() {
       path:"/anime/:id",
       element:<DetailAnime/>,
     },
+    {
+      path:"/manga",
+      element:<TopManga/>,
+    },
+
   ])
 
   return (
