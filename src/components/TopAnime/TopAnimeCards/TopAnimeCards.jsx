@@ -1,13 +1,13 @@
 import "../TopAnime.css"
 import { Link } from "react-router-dom"
 
-export default function TopAnimeCards({data}) {
+export default function TopAnimeCards({data, search, }) {
     
 
     return(
         <div className="TopAnimeCards">
             {
-                data.map((d,i)=>(
+                data.filter(d => d.title.toLowerCase().includes(search)).map((d,i)=>(
                     <div key={i} className="card">
                         <div className="imageDiv">
                             <img src={d.images.jpg.image_url} alt="" />
