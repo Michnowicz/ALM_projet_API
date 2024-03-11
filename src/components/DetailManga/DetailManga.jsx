@@ -3,7 +3,7 @@ import Navbar from "../Navbar/Navbar.jsx"
 import { useParams } from "react-router-dom"
 import { useEffect, useState } from "react"
 
-import UniqueAnime from "./UniqueManga/UniqueManga.jsx"
+import UniqueManga from "./UniqueManga/UniqueManga.jsx"
 
 export default function DetailManga({}) {
 
@@ -27,7 +27,7 @@ export default function DetailManga({}) {
                     data == "" ?
                     ""
                     :
-                    <UniqueAnime id={id} anime={data}/>
+                    <UniqueManga id={id} manga={data}/>
                 }
             </div>
         </section>

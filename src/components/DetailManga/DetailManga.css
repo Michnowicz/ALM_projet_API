@@ -57,18 +57,6 @@
 }
 
 
-.videoDiv {
-    width: 100%;
-    display: flex;
-    justify-content: center;
-    margin-top: 40px;
-}
-.videoDiv iframe {
-    width: 1000px;
-    height: 562px;
-}
-
-.videoDiv b {
-    font-size: 2rem;
-    padding: 10px;
+.synopsisText {
+    margin-top: 16px;
 }
