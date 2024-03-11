@@ -59,8 +59,7 @@ export default function TopAnime() {
                     </div>
                 </div>
 
-                <TopAnimeCards data={filteredData == "" ? data : filteredData} search={search} />
-                {/* <TopAnimeCards data={data} search={search} /> */}
+                <TopAnimeCards data={filteredData == "" ? data : data == "" ? "" : filteredData} search={search} />
 
             </div>
 

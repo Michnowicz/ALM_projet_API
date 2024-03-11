@@ -2,6 +2,7 @@
 import './App.css'
 import { RouterProvider, createBrowserRouter  } from 'react-router-dom';
 import TopAnime from './components/TopAnime/TopAnime.jsx';
+import DetailAnime from './components/DetailAnime/DetailAnime.jsx';
 
 function App() {
 
@@ -9,6 +10,10 @@ function App() {
     {
       path:"/",
       element:<TopAnime/>,
+    },
+    {
+      path:"/anime/:id",
+      element:<DetailAnime/>,
     },
   ])
 

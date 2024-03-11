@@ -1,7 +1,7 @@
 import "../TopAnime.css"
 import { Link } from "react-router-dom"
 
-export default function TopAnimeCards({data, search, }) {
+export default function TopAnimeCards({data, search}) {
     
 
     return(
@@ -20,8 +20,8 @@ export default function TopAnimeCards({data, search, }) {
                                 <p><b>studio :</b> {d.studios[0].name}</p>
                             </div>
                             <div className="btnInfo">
-                                <Link>
-                                    <button className="btnPillRose">Plus d'info</button>
+                                <Link to={"/anime/"+d.mal_id}>
+                                    <button id={d.mal_id} className="btnPillRose">Plus d'info</button>
                                 </Link>
                             </div>
                         </div>
