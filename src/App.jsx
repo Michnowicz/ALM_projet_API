@@ -4,6 +4,7 @@ import { RouterProvider, createBrowserRouter  } from 'react-router-dom';
 import TopAnime from './components/TopAnime/TopAnime.jsx';
 import DetailAnime from './components/DetailAnime/DetailAnime.jsx';
 import TopManga from './components/TopManga/TopManga.jsx';
+import DetailManga from './components/DetailManga/DetailManga.jsx';
 
 function App() {
 
@@ -19,6 +20,10 @@ function App() {
     {
       path:"/manga",
       element:<TopManga/>,
+    },
+    {
+      path:"/manga/:id",
+      element:<DetailManga/>,
     },
 
   ])

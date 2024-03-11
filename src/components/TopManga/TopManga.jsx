@@ -12,14 +12,14 @@ export default function TopManga() {
     const [search, setSearch] = useState('')
 
     useEffect(()=>{
-        fetch("https://api.jikan.moe/v4/top/anime")
+        fetch("https://api.jikan.moe/v4/top/manga")
         .then((response) => response.json())
         .then((response) => setData(response.data))
     },[])
 
     useEffect(()=>{
-        console.log(filteredData);
-    },[filteredData])
+        console.log(data);
+    },[data])
 
 
     function handleFilter(e) {

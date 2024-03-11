@@ -74,11 +74,12 @@
 }
 
 
-.btnPillRose {
-    color: #e376e6;
-    border: 2px solid #e376e6;
+.btnPillBlue {
+    color: #4a90db;
+    border: 2px solid #4a90db;
     background-color: rgba(255, 255, 255, 0);
     padding: 10px 50px 10px 50px;
     border-radius: 20px;
     cursor: pointer;
 }
+

@@ -15,13 +15,16 @@ export default function TopMangaCards({data, search}) {
                         <div className="textDiv">
                             <div className="cardText">
                                 <h3>{d.title}</h3>
-                                <p><b>épisodes :</b> {d.episodes}</p>
+                                <p><b>volumes :</b> 
+                                    {d.volumes == null ? "/" : d.volumes}
+                                </p>
                                 <p><b>score :</b> {d.score}</p>
-                                <p><b>studio :</b> {d.studios[0].name}</p>
+                                <div>
+                                <b>authors :</b> {d.authors[0].name}</div>
                             </div>
                             <div className="btnInfo">
-                                <Link to={"/anime/"+d.mal_id}>
-                                    <button id={d.mal_id} className="btnPillRose">Plus d'info</button>
+                                <Link to={"/manga/"+d.mal_id}>
+                                    <button id={d.mal_id} className="btnPillBlue">Plus d'info</button>
                                 </Link>
                             </div>
                         </div>
