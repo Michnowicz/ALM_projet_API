@@ -48,12 +48,12 @@
     display: flex;
     gap: 30px;
 }
-.imageDiv img {
+.card .imageDiv img {
     margin-left: 10px;
     height: 250px;
     width: 150px;
 }
-.textDiv {
+.card .textDiv {
     margin-top: 30px;
     color: #191035;
     display: flex;

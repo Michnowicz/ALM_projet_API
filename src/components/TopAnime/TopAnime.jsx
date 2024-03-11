@@ -17,6 +17,10 @@ export default function TopAnime() {
     },[])
 
     useEffect(()=>{
+        console.log(filteredData);
+    },[filteredData])
+
+    useEffect(()=>{
         let newData = ''
         if (option == 1) {
             newData = data
@@ -59,7 +63,16 @@ export default function TopAnime() {
                     </div>
                 </div>
 
-                <TopAnimeCards data={filteredData == "" ? data : data == "" ? "" : filteredData} search={search} />
+                {
+                    data == "" ?
+                    ""
+                    :
+                    filteredData == "" ?
+                    <TopAnimeCards data={data} search={search} />
+                    :
+                    <TopAnimeCards data={filteredData} search={search} />
+                }
+                
 
             </div>
 

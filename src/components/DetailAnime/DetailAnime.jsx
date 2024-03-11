@@ -27,7 +27,7 @@ export default function DetailAnime({}) {
                     data == "" ?
                     ""
                     :
-                    <UniqueAnime anime={data}/>
+                    <UniqueAnime id={id} anime={data}/>
                 }
             </div>
         </section>
