@@ -13,9 +13,19 @@ export default function Favourite({favAnime, favManga}) {
             <Navbar/>
 
             <div className="mainContainer">
-                <div className="favAnime">
-                    <Anime favAnime={favAnime}/>
-                    <Manga favManga={favManga}/>
+                <div>
+                    {
+                        favAnime == null ?
+                        <div></div>
+                        :
+                        <Anime favAnime={favAnime}/>
+                    }
+                    {
+                        favAnime == null ?
+                        <div></div>
+                        :
+                        <Manga favManga={favManga}/>
+                    }
                 </div>
             </div>
         </div>

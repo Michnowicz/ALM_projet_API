@@ -4,11 +4,6 @@ import { Link } from "react-router-dom"
 
 export default function TopAnimeCards({data, search, favAnime, setFavAnime}) {
 
-
-    useEffect(()=>{
-        console.log(favAnime);
-    },[favAnime])
-
     function handleOver(e) {
         e.target.classList.toggle("btnPillRoseOn")
     }
@@ -19,21 +14,26 @@ export default function TopAnimeCards({data, search, favAnime, setFavAnime}) {
         //saving of favourite data
         let fav = {"title" : e.target.getAttribute("title"), "mal_id" : e.target.getAttribute("mal"), "image" : e.target.getAttribute("image")}
 
-        // if flag is true, save fav as a new object in array favAnime
-        let flag = true
-
-        favAnime.map((a,i) => {
-            if (a.title == e.target.getAttribute("title")) {
-                flag = false
-            }
-        })
-
-        if (flag == true) {
-            setFavAnime([...favAnime, fav])
+        if (favAnime == null) {
+            setFavAnime([fav])
         } else {
-            let newTable = favAnime.filter(a=> a.title !== e.target.getAttribute("title"))
-            setFavAnime(newTable)
+            // if flag is true, save fav as a new object in array favAnime
+            let flag = true
+    
+            favAnime.map((a,i) => {
+                if (a.title == e.target.getAttribute("title")) {
+                    flag = false
+                }
+            })
+    
+            if (flag == true) {
+                setFavAnime([...favAnime, fav])
+            } else {
+                let newTable = favAnime.filter(a=> a.title !== e.target.getAttribute("title"))
+                setFavAnime(newTable)
+            }
         }
+
         
     }
 

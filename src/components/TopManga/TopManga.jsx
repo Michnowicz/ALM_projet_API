@@ -5,7 +5,7 @@ import { useEffect, useState } from 'react';
 
 import TopMangaCards from "./TopMangaCards/TopMangaCards.jsx";
 
-export default function TopManga() {
+export default function TopManga({favManga, setFavManga}) {
 
     const [data, setData] = useState([])
     const [filteredData, setFilteredData] = useState([])
@@ -40,9 +40,10 @@ export default function TopManga() {
                     ""
                     :
                     filteredData == "" ?
-                    <TopMangaCards data={data} search={search} />
+                    <TopMangaCards favManga={favManga} setFavManga={setFavManga} data={data} search={search} />
                     :
-                    <TopMangaCards data={filteredData} search={search} />
+                    <TopMangaCards favManga={favManga} setFavManga={setFavManga} data={filteredData} search={search} />
+
                 }
                 
 

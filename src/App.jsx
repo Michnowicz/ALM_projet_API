@@ -12,10 +12,9 @@ import { useLocalStorage } from "@uidotdev/usehooks";
 
 function App() {
 
-  // const [favAnime, setFavAnime] = useState([])
-  const [favManga, setFavManga] = useState([])
   const [favCharacter, setFavCharacter] = useState([])
   const [favAnime, setFavAnime] = useLocalStorage("favAnime", []);
+  const [favManga, setFavManga] = useLocalStorage("favManga", []);
 
   const pages = createBrowserRouter([
     {
