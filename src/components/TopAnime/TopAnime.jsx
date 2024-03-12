@@ -3,7 +3,7 @@ import Navbar from "../Navbar/Navbar.jsx"
 import TopAnimeCards from "./TopAnimeCards/TopAnimeCards.jsx";
 import { useEffect, useState } from 'react';
 
-export default function TopAnime() {
+export default function TopAnime({favAnime, setFavAnime}) {
 
     const [data, setData] = useState([])
     const [filteredData, setFilteredData] = useState([])
@@ -64,11 +64,10 @@ export default function TopAnime() {
                     ""
                     :
                     filteredData == "" ?
-                    <TopAnimeCards data={data} search={search} />
+                    <TopAnimeCards favAnime={favAnime} setFavAnime={setFavAnime} data={data} search={search} />
                     :
-                    <TopAnimeCards data={filteredData} search={search} />
+                    <TopAnimeCards favAnime={favAnime} setFavAnime={setFavAnime} data={filteredData} search={search} />
                 }
-                
 
             </div>
 

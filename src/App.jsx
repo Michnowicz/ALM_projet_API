@@ -6,13 +6,21 @@ import DetailAnime from './components/DetailAnime/DetailAnime.jsx';
 import TopManga from './components/TopManga/TopManga.jsx';
 import DetailManga from './components/DetailManga/DetailManga.jsx';
 import Characters from './components/Characters/Characters.jsx';
+import Favourite from './components/Favourite/Favourite.jsx';
+import { useEffect, useState } from 'react';
+import { useLocalStorage } from "@uidotdev/usehooks";
 
 function App() {
+
+  // const [favAnime, setFavAnime] = useState([])
+  const [favManga, setFavManga] = useState([])
+  const [favCharacter, setFavCharacter] = useState([])
+  const [favAnime, setFavAnime] = useLocalStorage("favAnime", []);
 
   const pages = createBrowserRouter([
     {
       path:"/",
-      element:<TopAnime/>,
+      element:<TopAnime favAnime={favAnime} setFavAnime={setFavAnime}/>,
     },
     {
       path:"/anime/:id",
@@ -20,7 +28,7 @@ function App() {
     },
     {
       path:"/manga",
-      element:<TopManga/>,
+      element:<TopManga favManga={favManga} setFavManga={setFavManga}/>,
     },
     {
       path:"/manga/:id",
@@ -28,7 +36,11 @@ function App() {
     },
     {
       path:"/characters",
-      element:<Characters/>,
+      element:<Characters favCharacter={favCharacter} setFavCharacter={setFavCharacter} />,
+    },
+    {
+      path:"/favourite",
+      element:<Favourite favAnime={favAnime} favManga={favManga} favCharacter={favCharacter}/>,
     },
 
   ])

@@ -25,7 +25,7 @@
     gap: 6px;
     margin-right: 20px;
 }
-.UniqueAnime .synoTitle {
+.synoTitle {
     color: #7544d9;
     font-size: 1.5rem;
 }
@@ -35,13 +35,13 @@
     line-height: 1.2rem;
     margin-bottom: 20px;
 }
-.UniqueAnime .synoGenre {
+.synoGenre {
     display: flex;
     gap: 6px;
     margin-top: 20px;
     flex-wrap: wrap;
 }
-.UniqueAnime hr {
+hr {
     position: relative;
     bottom: 10px;
     color: grey;

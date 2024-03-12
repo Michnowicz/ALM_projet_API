@@ -90,3 +90,15 @@
     color: white !important;
     background-color: #f755fd !important;
 }
+
+.heart {
+    margin-top: 10px;
+    cursor: pointer;
+    transition: all 0.3s ease-in-out;
+}
+.heartSelected {
+    margin-top: 10px;
+    cursor: pointer;
+    transition: all 0.3s ease-in-out;
+    color: rgb(255, 23, 23);
+}
