@@ -9,7 +9,7 @@ export default function Characters() {
     const [search, setSearch] = useState('')
     
     useEffect(()=>{
-        fetch("https://api.jikan.moe/v4/characters")
+        fetch("https://api.jikan.moe/v4/top/characters")
         .then((response)=>response.json())
         .then((response)=>setData(response.data))
     },[])

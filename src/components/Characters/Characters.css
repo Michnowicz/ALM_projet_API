@@ -25,7 +25,6 @@
     display: flex;
     flex-direction: column;
     gap: 20px;
-    
 }
 .characterText .name {
     color: #c75bd5;

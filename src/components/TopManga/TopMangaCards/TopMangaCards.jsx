@@ -3,6 +3,9 @@ import { Link } from "react-router-dom"
 
 export default function TopMangaCards({data, search}) {
     
+    function handleOver(e) {
+        e.target.classList.toggle("btnPillBlueOn")
+    }
 
     return(
         <div className="TopAnimeCards">
@@ -24,7 +27,7 @@ export default function TopMangaCards({data, search}) {
                             </div>
                             <div className="btnInfo">
                                 <Link to={"/manga/"+d.mal_id}>
-                                    <button id={d.mal_id} className="btnPillBlue">Plus d'info</button>
+                                    <button id={d.mal_id} className="btnPillBlue" onMouseEnter={handleOver} onMouseLeave={handleOver}>Plus d'info</button>
                                 </Link>
                             </div>
                         </div>
