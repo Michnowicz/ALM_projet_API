@@ -17,10 +17,6 @@ export default function TopAnime() {
     },[])
 
     useEffect(()=>{
-        console.log(filteredData);
-    },[filteredData])
-
-    useEffect(()=>{
         let newData = ''
         if (option == 1) {
             newData = data
@@ -64,7 +60,7 @@ export default function TopAnime() {
                 </div>
 
                 {
-                    data == "" ?
+                    data == undefined ?
                     ""
                     :
                     filteredData == "" ?

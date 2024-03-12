@@ -23,10 +23,8 @@ export default function Characters() {
         if (e.target.localName == "img") {
             e.target.nextElementSibling.classList.toggle("hidden")
         } else if (e.target.localName == "div") {
-            // console.log(e.target.children);
             e.target.classList.toggle("hidden")
         } else if (e.target.className == "name" || e.target.className == "nickname") {
-            // console.log(e.target.parentElement);
             e.target.parentElement.classList.toggle("hidden")
         }
     }
@@ -45,7 +43,7 @@ export default function Characters() {
                 </div>
                 
                 {
-                    data == "" ?
+                    data == undefined ?
                     ""
                     :
                     <UniqueCharacter handleOver={handleOver} data={data} search={search} />

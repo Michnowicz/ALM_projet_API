@@ -41,7 +41,9 @@
 }
 
 .card {
-    width: 45%;
+    /* width: 45%; */
+    width: 550px;
+    height: 280px;
     padding: 10px;
     box-sizing: border-box;
     background-color: white;

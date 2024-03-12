@@ -17,10 +17,6 @@ export default function TopManga() {
         .then((response) => setData(response.data))
     },[])
 
-    useEffect(()=>{
-        console.log(data);
-    },[data])
-
 
     function handleFilter(e) {
         setSearch(e.target.value.toLowerCase())
@@ -40,7 +36,7 @@ export default function TopManga() {
                 </div>
 
                 {
-                    data == "" ?
+                    data == undefined ?
                     ""
                     :
                     filteredData == "" ?

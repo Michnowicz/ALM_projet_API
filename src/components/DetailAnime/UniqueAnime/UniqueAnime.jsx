@@ -13,6 +13,8 @@ export default function UniqueAnime({anime, id}) {
         .then((response)=>setTheme(response.data))
     },[])
 
+    
+
 
     return(
         <div className="UniqueAnime">

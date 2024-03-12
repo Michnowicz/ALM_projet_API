@@ -32,3 +32,18 @@ nav .myAnime {
     padding: 20px;
     margin-left: 40px;
 }
+
+
+.clicked {
+    color: #bc59cb !important;
+    display: flex;
+    gap: 4px;
+    align-items: center;
+}
+.clicked::before {
+    content: '';
+    display: block;
+    background-color: #bc59cb;
+    height: 1rem;
+    width: 3px;
+}

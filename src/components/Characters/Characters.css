@@ -9,7 +9,8 @@
 }
 
 .uniqueCharacter {
-    width: 22%;
+    /* width: 22%; */
+    width: 270px;
     height: 420px;
 }
 .uniqueCharacter img {

@@ -34,6 +34,7 @@
     color: grey;
     line-height: 1.2rem;
     margin-bottom: 20px;
+    flex-wrap: wrap;
 }
 .UniqueAnime .synoGenre {
     display: flex;
