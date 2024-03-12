@@ -14,7 +14,7 @@ export default function Navbar() {
             <div className="linkDiv">
                 <Link to="/">TOP ANIME</Link>
                 <Link to='/manga'>TOP MANGA</Link>
-                <Link>CHARACTERS</Link>
+                <Link to="/characters">CHARACTERS</Link>
             </div>
         </nav>
     )

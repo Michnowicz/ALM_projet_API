@@ -1,0 +1,36 @@
+
+
+.charDiv {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    gap: 50px;
+    overflow: hidden;
+}
+
+.uniqueCharacter {
+    width: 22%;
+    height: 420px;
+}
+.uniqueCharacter img {
+    width: 100%;
+}
+.characterText {
+    position: relative;
+    bottom: 100px;
+    background-color: #140c2e;
+    width: 100%;
+    padding: 20px 10px 10px 10px;
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+.characterText .name {
+    color: #c75bd5;
+    text-align: center;
+}
+.characterText .nickname {
+    color: #c75bd5;
+    margin-bottom: 10px;
+}

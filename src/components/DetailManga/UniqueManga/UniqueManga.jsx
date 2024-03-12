@@ -4,14 +4,14 @@ import { useEffect, useState } from "react";
 
 export default function UniqueManga({manga, id}) {
 
-    const [theme, setTheme] = useState([])
+    // const [theme, setTheme] = useState([])
     
-    useEffect(()=>{
-        console.log(manga.data.mal_id);
-        fetch("https://api.jikan.moe/v4/manga/"+id)
-        .then((response)=>response.json())
-        .then((response)=>setTheme(response.data))
-    },[])
+    // useEffect(()=>{
+    //     console.log(manga.data.mal_id);
+    //     fetch("https://api.jikan.moe/v4/manga/"+id)
+    //     .then((response)=>response.json())
+    //     .then((response)=>setTheme(response.data))
+    // },[])
 
 
     return(

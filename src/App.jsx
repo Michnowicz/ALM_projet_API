@@ -5,6 +5,7 @@ import TopAnime from './components/TopAnime/TopAnime.jsx';
 import DetailAnime from './components/DetailAnime/DetailAnime.jsx';
 import TopManga from './components/TopManga/TopManga.jsx';
 import DetailManga from './components/DetailManga/DetailManga.jsx';
+import Characters from './components/Characters/Characters.jsx';
 
 function App() {
 
@@ -24,6 +25,10 @@ function App() {
     {
       path:"/manga/:id",
       element:<DetailManga/>,
+    },
+    {
+      path:"/characters",
+      element:<Characters/>,
     },
 
   ])
