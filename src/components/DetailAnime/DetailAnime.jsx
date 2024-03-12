@@ -24,7 +24,7 @@ export default function DetailAnime({}) {
             
             <div className="mainContainer">
                 {
-                    data == undefined ?
+                    data == "" ?
                     ""
                     :
                     <UniqueAnime id={id} anime={data}/>

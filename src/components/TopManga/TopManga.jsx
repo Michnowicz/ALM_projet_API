@@ -36,7 +36,7 @@ export default function TopManga() {
                 </div>
 
                 {
-                    data == undefined ?
+                    data == "" ?
                     ""
                     :
                     filteredData == "" ?

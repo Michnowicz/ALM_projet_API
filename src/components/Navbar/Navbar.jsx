@@ -11,9 +11,11 @@ export default function Navbar() {
         setPage(window.location.pathname);
     },[])
 
-    useEffect(()=>{
-        console.log(page);
-    },[page])
+    function handleHover(e) {
+        if (e.target.className.includes("clicked") == false) {
+            e.target.classList.toggle("hover")
+        }
+    }
 
     return(
         <nav>
@@ -22,9 +24,9 @@ export default function Navbar() {
             </div>
 
             <div className="linkDiv">
-                <Link to="/" className={page == "/" || page.includes("/anime") ? "clicked" :""}>TOP ANIME</Link>
-                <Link to='/manga' className={page.includes("/manga") ? "clicked" :""}>TOP MANGA</Link>
-                <Link to="/characters" className={page == "/characters" ? "clicked" :""}>CHARACTERS</Link>
+                <Link to="/" className={page == "/" || page.includes("/anime") ? "clicked" :""} onMouseEnter={handleHover} onMouseLeave={handleHover}>TOP ANIME</Link>
+                <Link to='/manga' className={page.includes("/manga") ? "clicked" :""} onMouseEnter={handleHover} onMouseLeave={handleHover}>TOP MANGA</Link>
+                <Link to="/characters" className={page == "/characters" ? "clicked" :""} onMouseEnter={handleHover} onMouseLeave={handleHover}>CHARACTERS</Link>
             </div>
         </nav>
     )

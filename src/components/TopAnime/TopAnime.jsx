@@ -60,7 +60,7 @@ export default function TopAnime() {
                 </div>
 
                 {
-                    data == undefined ?
+                    data == "" ?
                     ""
                     :
                     filteredData == "" ?

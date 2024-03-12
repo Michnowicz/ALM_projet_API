@@ -13,6 +13,7 @@ nav {
 nav a {
     color: white;
     font-size: 1rem;
+    margin-left: 3px;
 }
 
 nav .myAnime {
@@ -23,6 +24,7 @@ nav .myAnime {
     padding: 20px;
     display: flex;
     align-items: center;
+    justify-content: space-between;
     gap: 40px;
     margin-right: 40px;
 }
@@ -46,4 +48,19 @@ nav .myAnime {
     background-color: #bc59cb;
     height: 1rem;
     width: 3px;
+}
+
+.hover {
+    color: #bc59cb !important;
+    display: flex;
+    gap: 4px;
+    align-items: center;
+    position: relative;
+}
+.hover::before {
+    content: '';
+    display: block;
+    background-color: #bc59cb;
+    height: 1rem;
+    width: 2px;
 }

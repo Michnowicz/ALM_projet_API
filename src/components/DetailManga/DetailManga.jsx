@@ -24,7 +24,7 @@ export default function DetailManga({}) {
             
             <div className="mainContainer">
                 {
-                    data == undefined ?
+                    data == "" ?
                     ""
                     :
                     <UniqueManga id={id} manga={data}/>

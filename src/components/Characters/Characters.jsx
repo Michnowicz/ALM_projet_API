@@ -43,7 +43,7 @@ export default function Characters() {
                 </div>
                 
                 {
-                    data == undefined ?
+                    data == "" ?
                     ""
                     :
                     <UniqueCharacter handleOver={handleOver} data={data} search={search} />
