@@ -4,3 +4,7 @@
     padding: 10% 10% 2% 10%;
     box-sizing: border-box;
 }
+
+.hidden {
+    display: none !important
+}
