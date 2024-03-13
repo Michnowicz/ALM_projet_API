@@ -38,7 +38,6 @@ export default function TopAnime({favAnime, setFavAnime}) {
     function handleOption(e) {
         setOption(e.target.value);
     }
-    
 
     return(
         <section className="TopAnime">
