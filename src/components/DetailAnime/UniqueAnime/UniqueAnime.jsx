@@ -80,7 +80,7 @@ export default function UniqueAnime({anime, id}) {
                 
                 {
                     anime.data.trailer.url !== null ?
-                    <iframe src={anime.data.trailer.url} title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+                    <iframe src={anime.data.trailer.url} title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowFullScreen></iframe>
                     :
                     <b className="indispo">Trailer indisponible</b>
                 }

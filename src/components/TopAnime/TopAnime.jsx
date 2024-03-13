@@ -3,6 +3,7 @@ import Navbar from "../Navbar/Navbar.jsx"
 import TopAnimeCards from "./TopAnimeCards/TopAnimeCards.jsx";
 import { useEffect, useState } from 'react';
 
+
 export default function TopAnime({favAnime, setFavAnime}) {
 
     const [data, setData] = useState([])

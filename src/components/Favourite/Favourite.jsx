@@ -6,6 +6,9 @@ import Manga from "./components/Manga.jsx"
 
 export default function Favourite({favAnime, favManga}) {
     
+    function handleHover(e) {
+        e.target.classList.toggle("hoverOn")
+    }
 
     
     return(
@@ -18,13 +21,13 @@ export default function Favourite({favAnime, favManga}) {
                         favAnime == null ?
                         <div></div>
                         :
-                        <Anime favAnime={favAnime}/>
+                        <Anime favAnime={favAnime} handleHover={handleHover} />
                     }
                     {
                         favAnime == null ?
                         <div></div>
                         :
-                        <Manga favManga={favManga}/>
+                        <Manga favManga={favManga} handleHover={handleHover} />
                     }
                 </div>
             </div>

@@ -1,7 +1,7 @@
 import "../Favourite.css"
 import { Link } from "react-router-dom"
 
-export default function Manga({favManga}) {
+export default function Manga({favManga, handleHover}) {
     
 
     return(
@@ -11,7 +11,7 @@ export default function Manga({favManga}) {
             <div className="container">
                 {
                     favManga.map((a,i)=>(
-                        <Link key={i} to={"/manga/"+a.mal_id}>
+                        <Link key={i} to={"/manga/"+a.mal_id} onMouseEnter={handleHover} onMouseLeave={handleHover}>
                             <b>{a.title}</b>
                         </Link>
                     ))
